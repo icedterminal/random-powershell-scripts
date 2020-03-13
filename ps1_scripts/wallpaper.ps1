@@ -15,7 +15,6 @@ cd CachedFiles
 $name = Get-ChildItem -name *.jpg
 Remove-Item $name
 rename-item TranscodedWallpaper $name
-New-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "JPEGImportQuality" -Value "100"  -PropertyType "DWORD"
 Write-Host "
 Right click on your Desktop and click Refresh
 "
