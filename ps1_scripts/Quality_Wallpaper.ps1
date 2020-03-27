@@ -1,4 +1,6 @@
-﻿Write-Host "
+﻿# Manual work around for high quality wallpaper.
+
+Write-Host "
 
 Wallpaper images must be Portable Network Graphics (.png) format. If it is not, please convert.
 In the space below, enter the name of your image. DO NOT include the extension.
@@ -19,5 +21,5 @@ rename-item TranscodedWallpaper $name
 Write-Host "
 Right click on your Desktop and click Refresh or log out / in.
 "
-#New-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "JPEGImportQuality" -Value "100"  -PropertyType "DWORD"
+New-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "JPEGImportQuality" -Value "100"  -PropertyType "DWORD"
 cd $env:USERPROFILE\Desktop

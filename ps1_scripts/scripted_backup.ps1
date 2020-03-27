@@ -1,4 +1,6 @@
-﻿$outputfile = "$env:systemdrive\PS_Output.log"
+﻿# Copies important user and program data to be restored when reinstalling Windows.
+
+$outputfile = "$env:systemdrive\PS_Output.log"
 Start-Transcript -path $outputfile -append
 
 Write-Host "

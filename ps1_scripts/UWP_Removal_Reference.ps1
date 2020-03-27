@@ -4,6 +4,8 @@
 # I have excluded the command to uninstall Snip and Sketch. In a future build, it will be your only option as the win32 based Snipping Tool will be removed.
 # These are safe to remove:
 
+# DO NOT RUN THIS SCRIPT AS IS! IT IS REFERENCE AS MANUAL INPUT ONLY!
+
 # If you want to remove Zune Video and Music, use Zune. Otherwise, specify which one you want to remove.
 Get-AppxPackage -AllUsers *[zune|zunemusic|zunevideo]* | remove-appxpackage
 # I encourage you to leave Photos. Unless you prefer something else
